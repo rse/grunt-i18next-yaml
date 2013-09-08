@@ -101,6 +101,7 @@ grunt.initConfig({
     "foo": {
         "title": "The Foo Component",
         "sub-title": "The best Component ever"
+    },
     "bar": {
         "title": "The Bar Component",
         "sub-title": "The worst Component ever"
