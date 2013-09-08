@@ -76,6 +76,7 @@ bar:
 ```js
 // [...]
 grunt.initConfig({
+    // [...]
     "i18next-yaml": {
         "en": {
             src: "src/**/*.i18n.yaml",
@@ -88,6 +89,7 @@ grunt.initConfig({
             options: { language: "de" }
         }
     }
+    // [...]
 });
 // [...]
 ```
