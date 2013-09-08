@@ -23,9 +23,6 @@
 */
 
 /* global module:  false */
-/* global require: false */
-
-var fs = require("fs");
 
 module.exports = function (grunt) {
     grunt.registerMultiTask("i18next-yaml",
@@ -62,10 +59,10 @@ module.exports = function (grunt) {
                     }
                 });
 
-	        /*  write destination JSON file  */
+                /*  write destination JSON file  */
                 var txt = JSON.stringify(msgs, options.replacer, options.space);
-	        grunt.file.write(f.dest, txt, { encoding: options.encoding });
-	        grunt.log.writeln("File \"" + f.dest + "\" created.");
+                grunt.file.write(f.dest, txt, { encoding: options.encoding });
+                grunt.log.writeln("File \"" + f.dest + "\" created.");
             }
             catch (e) {
                 grunt.fail.warn(e);
