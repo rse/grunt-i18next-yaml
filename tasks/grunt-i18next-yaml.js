@@ -23,8 +23,10 @@
 */
 
 /* global module:  false */
-
 module.exports = function (grunt) {
+    /* global require: false */
+    var chalk = require("chalk");
+
     grunt.registerMultiTask("i18next-yaml",
         "Assemble language-separated i18next JSON output files from language-merged YAML input files", function () {
 
@@ -46,7 +48,7 @@ module.exports = function (grunt) {
                 /*  iterate over all src files  */
                 f.src.forEach(function (src) {
                     if (!grunt.file.exists(src))
-                        throw "Source file \"" + src + "\" not found.";
+                        throw "Source file \"" + chalk.red(src) + "\" not found.";
                     else {
                         /*  read source YAML file  */
                         var obj = grunt.file.readYAML(src, { encoding: options.encoding });
@@ -62,7 +64,7 @@ module.exports = function (grunt) {
                 /*  write destination JSON file  */
                 var txt = JSON.stringify(msgs, options.replacer, options.space);
                 grunt.file.write(f.dest, txt, { encoding: options.encoding });
-                grunt.log.writeln("File \"" + f.dest + "\" created.");
+                grunt.log.writeln("File \"" + chalk.green(f.dest) + "\" created.");
             }
             catch (e) {
                 grunt.fail.warn(e);
