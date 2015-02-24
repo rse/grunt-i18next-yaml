@@ -2,7 +2,7 @@
     "name":        "grunt-i18next-yaml",
     "homepage":    "http://github.com/rse/grunt-i18next-yaml",
     "description": "Grunt Plugin for assembling language-separated i18next JSON output files from language-merged YAML input files",
-    "version":     "0.9.2",
+    "version":     "0.9.3",
     "license":     "MIT",
     "author": {
         "name":    "Ralf S. Engelschall",
