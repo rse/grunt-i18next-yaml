@@ -1,6 +1,6 @@
 ##
 ##  grunt-i18next-yaml -- Grunt Task for I18N File Assembling
-##  Copyright (c) 2013 Ralf S. Engelschall <rse@engelschall.com>
+##  Copyright (c) 2013-2015 Ralf S. Engelschall <rse@engelschall.com>
 ##
 ##  Permission is hereby granted, free of charge, to any person obtaining
 ##  a copy of this software and associated documentation files (the
@@ -23,7 +23,7 @@
 ##
 
 NPM   = npm
-GRUNT = ./node_modules/grunt-cli/bin/grunt 
+GRUNT = ./node_modules/grunt-cli/bin/grunt
 
 all: build
 
