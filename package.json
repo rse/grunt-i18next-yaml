@@ -1,39 +1,44 @@
 {
-    "name":        "grunt-i18next-yaml",
-    "homepage":    "http://github.com/rse/grunt-i18next-yaml",
+    "name": "grunt-i18next-yaml",
+    "homepage": "http://github.com/rse/grunt-i18next-yaml",
     "description": "Grunt Plugin for assembling language-separated i18next JSON output files from language-merged YAML input files",
-    "version":     "0.9.3",
-    "license":     "MIT",
+    "version": "0.9.3",
+    "license": "MIT",
     "author": {
-        "name":    "Ralf S. Engelschall",
-        "email":   "rse@engelschall.com",
-        "url":     "http://engelschall.com"
+        "name": "Ralf S. Engelschall",
+        "email": "rse@engelschall.com",
+        "url": "http://engelschall.com"
     },
     "keywords": [
         "gruntplugin",
-        "assemble", "i18n", "i18next", "json", "yaml", "language"
+        "assemble",
+        "i18n",
+        "i18next",
+        "json",
+        "yaml",
+        "language"
     ],
     "repository": {
         "type": "git",
-        "url":  "git://github.com/rse/grunt-i18next-yaml.git"
+        "url": "git://github.com/rse/grunt-i18next-yaml.git"
     },
     "bugs": {
-        "url":  "http://github.com/rse/grunt-i18next-yaml/issues"
+        "url": "http://github.com/rse/grunt-i18next-yaml/issues"
     },
     "main": "Gruntfile.js",
     "devDependencies": {
-        "grunt":                "~0.4.5",
-        "grunt-cli":            "~0.1.13",
+        "grunt": "~0.4.5",
+        "grunt-cli": "~0.1.13",
         "grunt-contrib-jshint": "~0.11.0",
-        "grunt-contrib-clean":  "~0.6.0"
+        "grunt-contrib-clean": "~0.6.0"
     },
     "peerDependencies": {
-        "grunt":                "~0.4.5"
+        "grunt": ">=0.4.0"
     },
     "dependencies": {
-        "chalk":                "~1.0.0"
+        "chalk": "~1.0.0"
     },
     "engines": {
-        "node":                 ">=0.10.0"
+        "node": ">=0.10.0"
     }
 }
